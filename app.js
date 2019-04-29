@@ -1,3 +1,5 @@
+let port=process.env.PORT || 9000
+
 var express = require('express')
 var path = require('path')
 var bodyParser = require('body-parser')
@@ -48,6 +50,6 @@ app.get('/connect', function(req, res) {
 
 //START SERVER================================================================
 
-app.listen(9000, function(){
-    console.log('Server listening on Port 9000...')
+app.listen(port, function(){
+    console.log(`Server listening on Port ${port}...`)
 })
