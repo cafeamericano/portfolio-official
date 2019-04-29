@@ -19,7 +19,11 @@ app.set('view engine', 'handlebars');
 //ROUTES================================================================
 
 app.get('/', function(req, res) { 
-    res.render('about')
+    res.render('home')
+})
+
+app.get('/mystory', function(req, res) { 
+    res.render('mystory')
 })
 
 app.get('/apps', function(req, res) { 
@@ -38,12 +42,12 @@ app.get('/capabilities', function(req, res) {
     res.render('capabilities')
 })
 
-app.get('/background', function(req, res) {
-    res.render('background')
+app.get('/connect', function(req, res) {
+    res.render('connect')
 })
 
 //START SERVER================================================================
 
 app.listen(9000, function(){
-    console.log('Server listening on Port 3000...')
+    console.log('Server listening on Port 9000...')
 })
