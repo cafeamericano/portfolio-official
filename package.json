@@ -2,19 +2,21 @@
   "name": "MyPortfolio",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "10.15.1"
+  },
   "main": "app.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "body-parser": "*",
     "express": "*",
     "express-handlebars": "^3.0.2",
     "nodemon": "*"
   },
-  "engines": {
-    "node": "10.15.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  //Dev dependencies
+  //Repository
   "author": "",
   "license": "ISC"
 }
