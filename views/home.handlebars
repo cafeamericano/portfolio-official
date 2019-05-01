@@ -23,8 +23,7 @@ data.addRows([
     ['Bootstrap', 4],
     ['NodeJS', 3.5],
     ['ExpressJS', 3.5],
-    ['ReactJS', 3],
-    ['', 0],
+    ['ReactJS', 3]
 ]);
 
 // Set chart options
@@ -33,7 +32,13 @@ data.addRows([
         'width':'100%',
         'height':'100%',
         'legend':'none',
-        hAxis: { textPosition: 'none' },
+        hAxis: { 
+            textPosition: 'none',
+            viewWindow: {
+                min: 0,
+                max: 5
+            }
+        },
         'chartArea': {'width': '80%', 'height': '95%'},
         'backgroundColor': { fill:'transparent'},
         'animation': {'startup':true, duration: 1200, easing: 'inAndOut'},
